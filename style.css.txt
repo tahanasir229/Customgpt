@@ -1,0 +1,105 @@
+body {
+    background-color: #010139;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav :hover {
+    background-color: rgb(40, 34, 101);
+    border-radius: 60px;
+}
+
+nav ul {
+    border: 2px solid rgb(131, 141, 190);
+    margin: auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    padding: 0 20px;
+    border-radius: 60px;
+    background-color: rgb(8, 6, 24);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    padding: 30px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.mainbox {
+    width: 90vw;
+    margin: 50px;
+    color: rgb(255, 245, 245);
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+h1, h3, h2 {
+    text-align: center;
+    color: aliceblue;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.image1 img {
+    width: 60vw;
+    cursor: pointer;
+    border: 1px solid rgb(3, 3, 3);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 60px;
+}
+
+.image2 img {
+    transition: transform 0.4s ease-out;
+    width: 15vw;
+    border-radius: 10px;
+    height: 21vh;
+    border: 1px solid rgb(152, 151, 151);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.image2:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+footer {
+    background-color: rgb(8, 6, 24);
+    color: aliceblue;
+    list-style: none;
+    position: relative;
+    width: 98.9vw;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.poora {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.separation {
+    height: 2px;
+    background-color: rgb(60, 60, 62);
+}
+
+.separation3 {
+    height: 4.8vh;
+    background-color: rgb(8, 6, 24);
+}
