@@ -4,16 +4,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Insights</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+    background-color:#010139;
+    /* width: 20px;  */
+}
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav :hover {
+    background-color: rgb(40, 34, 101);
+    border-radius: 60px;
+}
+
+nav ul {
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    padding: 0 20px;
+    border-radius: 60px;
+    background-color: rgb(8, 6, 24);
+    color: white;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(131, 141, 190);
+
+}
+
+li {
+    padding: 30px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.mainbox {
+    width: 90vw;
+    height: auto;
+    margin: 50px;
+    /* height: 20px; */
+    /* border: 2px solid black; */
+    color: rgb(255, 245, 245);
+    font: 700;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color:rgba(41, 40, 72, 0.6); */
+    text-align: center;
+    padding: 0 30px 0;
+    font-style: italic;
+    /* border-radius: 60px; */
+}
+
+h2 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 800;
+    margin: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+h3 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 800;
+    margin: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+.image1 {
+    text-align: center;
+}
+
+.image1 img {
+    width: 60vw;
+    cursor: pointer;
+    border: 1px solid rgb(3, 3, 3);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 60px;
+}
+
+.image2:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+
+.image2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image2 img {
+    transition: transform 0.4s ease-out;
+    width: 15vw;
+    border-radius: 10px;
+    height: 21vh;
+    border: 1px solid rgb(152, 151, 151);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.separation {
+    height: 2px;
+    background-color: rgb(60, 60, 62);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 800;
+    margin: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+footer {
+    background-color: rgb(8, 6, 24);
+    color: aliceblue;
+    list-style: none;
+    position: relative;
+    top: 15px;
+    left: -8px;
+    width: 98.9vw;
+    bottom: 0px;
+}
+ol {
+    list-style-type: none;
+}
+
+.poora {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+ol li {
+    position: relative;
+    left: -4vw;
+}
+.separation3 {
+    height: 4.8vh;
+    background-color:  rgb(8, 6, 24);
+    position: relative;
+    top:-2.3vw
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        width: 50vw;
+        padding: 5px;
+        margin: auto;
+        position: relative;
+        top: 2vw;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+
+    .mainbox {
+        left: -16vw;
+        position: relative;
+        width: 90vw;
+        color: rgb(255, 245, 245);
+        font-weight: 300;
+        font-size: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-style: italic;
+    }
+
+
+    .image2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3vw;
+        column-gap: 3vw;
+    }
+
+    .image2 img {
+        width: 30vw;
+        border-radius: 10px;
+        height: 15vh;
+        border: 1px solid rgb(152, 151, 151);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-y: auto;
+        height: 100%;
+
+    }
+
+    h1 {
+        position: relative;
+        font-size: 6vw;
+
+        margin: 15vw;
+        /* left: 20vw; */
+    }
+
+    .image1 {
+        text-align: center;
+    }
+
+    .image1 img {
+        position: relative;
+        width: 90vw;
+        cursor: pointer;
+        border: 1px solid rgb(3, 3, 3);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        border-radius: 60px;
+    }
+
+    h3 {
+
+        margin: 50px;
+        position: relative;
+        left: 1vw;
+    }
+
+
+
+    .separation {
+        height: 2px;
+        width: 100vw;
+        background-color: rgb(60, 60, 62);
+        position: relative;
+    }
+
+    h2 {
+        margin: 50px;
+        position: relative;
+        font-weight: bolder;
+        font-size: 4vw;
+
+    }
+
+    footer {
+        background-color: rgb(8, 6, 24);
+        color: aliceblue;
+        list-style: none;
+        position: relative;
+        width: 103vw;
+
+    }
+
+    ol {
+        list-style-type: none;
+    }
+
+    .poora {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        justify-content: space-around;
+        /* padding: 5px; */
+        list-style: none;
+        /* gap:10vw; */
+
+    }
+
+    ol li {
+        position: relative;
+        left: -12vw;
+    }
+
+}
+</style>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,24 +317,60 @@
     </div>
 
     <main>
-        <div class="mainbox">
-            Cricket is a game of passion, skill, and strategy, celebrated across the globe in multiple formats...
+        <div class="mainbox">Cricket is a game of passion, skill, and strategy, celebrated across the globe in multiple
+            formats. Among these, Test cricket and One-Day Internationals (ODIs) stand out as two of the most iconic
+            formats, each with its unique flavor. However, understanding the distinct characteristics and nuances of
+            these formats can be challenging for fans. That’s why I’ve developed an intelligent ChatGPT model to bridge
+            this gap and provide a clear, detailed comparison of Test and ODI cricket.
+
+            This model dives deep into the essence of both formats, explaining how Test cricket is the ultimate test of
+            patience, endurance, and tactical brilliance, played over five days with unlimited overs. It’s a format
+            where players' character and resilience shine the brightest. On the other hand, ODIs bring a thrilling
+            balance of skill and excitement, played within a time-constrained 50-over framework that demands quick
+            decisions and aggressive play.
+
+            With this model, cricket enthusiasts can uncover the intricacies of field settings, batting strategies, and
+            bowling approaches unique to each format. Whether you’re looking to deepen your understanding of the
+            traditional charm of Test matches or the adrenaline rush of ODIs, this tool is designed to be your
+            comprehensive cricket guide. It’s not just informative; it’s your gateway to truly appreciating the game’s
+            beauty and evolution!
         </div>
         <div class="separation"></div>
         <h3>"Classic Test Cricket Snippets: A Glimpse into History"</h3>
         <div class="image2">
-            <img src="https://i.ytimg.com/vi/va62Nr7staugDGjwKCEkBQHaE8&pid=Api&P=0&h=220" alt="">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.0TvfHr7staugDGjwKCEkBQHaE8&pid=Api&P=0&h=220" alt="">
+            <img src="https://i.ytimg.com/vi/va62NrZGm8Q/maxresdefault.jpg" alt="">
+            <img src="https://sportsdigest.in/wp-content/uploads/2023/04/Ben-Stokes-Source-TwitterICC.jpg" alt="">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.0TvfHr7staugDGjwKCEkBQHaE8&pid=Api&P=0&h=220"
+                alt="">
+            <img src="https://c.ndtvimg.com/2023-06/0ho1neu_australia-wtc-final-2023-afp_625x300_11_June_23.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="">
+            <img src="https://blog.sixescricket.com/wp-content/uploads/2023/08/Famous-Matches-and-Moments-at-The-Oval.jpg" alt="">
+            <img src="https://images.firstpost.com/wp-content/uploads/2023/06/Australia-celebrate-with-trophy-WTC-Final-AP-640.jpg" alt="">
         </div>
-    </main>
-
+       
     <footer>
         <ol>
-            <li class="barhi">-About Us<br><br>Welcome to...</li>
-        </ol>
-        <iframe src="https://www.chatbase.co/chatbot-iframe/6xD3SeSfxgTuCdI22OOYi" width="45%" style="height: 100%; min-height: 700px" frameborder="0"></iframe>
-        <div class="separation3"></div>
+            <li class="barhi">-About Us <br><br>
+
+                Welcome to the Test and ODI Cricket Insights model. This tool is designed to provide a clear understanding of the key differences between Test cricket and One-Day Internationals (ODIs). It offers detailed insights into the unique characteristics, strategies, and playing styles of each format.
+                
+                Whether you're a seasoned fan or new to the game, this model helps you appreciate the distinct qualities of Test cricket's strategic depth and ODI's fast-paced excitement, serving as a valuable resource for all cricket enthusiasts. </li>
+                <!-- <li class="barhi">-Copyright <br> <br>
+                    
+                    © 2024 [Your Name or Your Organization]. All rights reserved. <br>
+                    
+                    This content, including the Test and ODI Cricket Insights model, is protected by copyright law. Unauthorized use, reproduction, or distribution of any part of this material is strictly prohibited. For permission to use any content from this model, please contact [Your Contact Information].
+                    
+                    All trademarks, logos, and service marks used in this model are the property of their respective owners.
+
+
+
+                </li> -->
+                <iframe src="https://www.chatbase.co/chatbot-iframe/6xD3SeSfxgTuCdI22OOYi" width="45%"
+                style="height: 100%; min-height: 700px" frameborder="0"></iframe>
+                <div class="separation3"></div>
+        </ol>  
     </footer>
+
 </body>
 
 </html>
